@@ -1,0 +1,123 @@
+{
+    "Main": {
+        "Token": {
+            "Telegram": {
+                "Telegram Token": "6524475538:AAFo5zLIaYeHCyFQscx4w7e9gwtYq5bKW18",
+                "Telegram Chat ID": "-1001661450123",
+                "info": "br33z3"
+            },
+            "Slack": {
+                "Slack Bot User OAuth Token": "xoxb-5657156069985-5629994985815-Ejt8Fya8nLBzbDeo1rMznvpe"
+            }
+        },
+        "Keywords": [
+            "password",
+            "Password Reset",
+            "reset",
+            "Trendyol",
+            "Facebook",
+            "Twitter",
+            "passcode",
+            "otp",
+            "expired",
+            "bank",
+            "account",
+            "money",
+            "BTC",
+            "unlock",
+            "recovery",
+            "change",
+            "forgotten",
+            "forget",
+            "amazon",
+            "aws",
+            "bitcoin"
+        ],
+        "Mail_Links": {
+            "YOPMail": [
+                "https://yopmail.com/rss?login=a&h=e3f6e4754386426ba26608429db1aabb",
+                "https://yopmail.com/rss?login=aa&h=761a2ca8df2a4ab284c91cf8285230f0",
+                "https://yopmail.com/rss?login=b&h=ca9f60e7fbc5438981b2b2bf5f793220",
+                "https://yopmail.com/rss?login=c&h=43283f68663e4c86bbdc0e5e03e0278a",
+                "https://yopmail.com/rss?login=d&h=3ae85b6ad5904d8f98f80367786f588e",
+                "https://yopmail.com/rss?login=e&h=bfd4a0426c5742678941daec97403ca4",
+                "https://yopmail.com/rss?login=f&h=67ef727f7da84321ad7ed18631e0137d",
+                "https://yopmail.com/rss?login=g&h=7d4cc050715a4161a7e9a88425895afb",
+                "https://yopmail.com/rss?login=h&h=ab032f644c124b15aa93f25b88fe715c",
+                "https://yopmail.com/rss?login=i&h=4f153b91c5ce4ce6bffc30e4cfefaffa",
+                "https://yopmail.com/rss?login=j&h=b6d852f37e3e41a4bb909a5db8665cc0",
+                "https://yopmail.com/rss?login=k&h=4c12e785abf64fcaab6a0918eaed9ae0",
+                "https://yopmail.com/rss?login=l&h=d13f4b7554d4486199e493bf3dabf5b7",
+                "https://yopmail.com/rss?login=m&h=247b748ddf3e4b63aeaedd478de6d02c",
+                "https://yopmail.com/rss?login=n&h=87580e32c7d846c98f37eb64cfe7bbb4",
+                "https://yopmail.com/rss?login=o&h=8e162339da73410baacb914dddde0a46",
+                "https://yopmail.com/rss?login=p&h=5310001e890b4d50ad6c4c6617c32ceb",
+                "https://yopmail.com/rss?login=r&h=6b468644e19d4a618e865cbd435c9d9c",
+                "https://yopmail.com/rss?login=s&h=78ca082a603a4c2ea5c2744de71242d7",
+                "https://yopmail.com/rss?login=t&h=4797a9f5d013428f9782abdae0cade93",
+                "https://yopmail.com/rss?login=u&h=3a7084a0d9024165be805a90c2963b1f",
+                "https://yopmail.com/rss?login=v&h=561b25f7e9444a25b46b2f7795145ab8",
+                "https://yopmail.com/rss?login=y&h=f667f31bcf134e67b737c5f32cfac623",
+                "https://yopmail.com/rss?login=x&h=d3e7089f930e4410a55d699c24c1bee2",
+                "https://yopmail.com/rss?login=w&h=5a123390a6f84d39a177da70db731f96",
+                "https://yopmail.com/rss?login=1&h=79f33cf3724a41208159988348d529bd",
+                "https://yopmail.com/rss?login=2&h=55172aa83a3d41b387da4d57d443b061",
+                "https://yopmail.com/rss?login=3&h=bd8a7103004a41abb2ce40bbeb061c2a",
+                "https://yopmail.com/rss?login=4&h=3e0151407c1e43809c3effe04eb871ef",
+                "https://yopmail.com/rss?login=5&h=7cd7e35074df4730ba472126c784b27c",
+                "https://yopmail.com/rss?login=6&h=e4e4c7c77e5c444195e64383f74050e0",
+                "https://yopmail.com/rss?login=7&h=1c3184a4f65b479bb5d4531db7b99692",
+                "https://yopmail.com/rss?login=8&h=bf6b68bb1bf94397a990a6448ade2168",
+                "https://yopmail.com/rss?login=9&h=e77ce0e57ba348aab651bf903b06b43c",
+                "https://yopmail.com/rss?login=10&h=77fe554740d94089956c318ded90d171"
+            ],
+            "TempMail_Plus": [
+                "https://tempmail.plus/api/mails?email=a%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=b%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=c%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=d%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=e%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=f%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=g%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=h%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=i%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=j%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=k%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=l%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=m%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=n%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=o%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=p%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=r%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=s%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=t%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=u%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=v%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=y%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=x%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=w%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=1%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=2%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=3%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=4%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=5%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=6%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=7%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=8%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=9%40mailto.plus&limit=100",
+                "https://tempmail.plus/api/mails?email=10%40mailto.plus&limit=100"
+            ],
+            "tempr_mail": [
+              "https://tempr.email/en/inbox-showSpam=true.htm"
+            ]
+        },
+        "Proxies": {
+            "http": [
+                "socks5://174.76.35.15:36163"
+            ],
+            "https": [
+                "socks5://174.76.35.15:36163"
+            ]
+        }
+    }
+}
