@@ -48,7 +48,6 @@ Where:
 ## Notifications
 
 To receive notifications, you'll need to provide valid credentials for your preferred platform (Slack or Telegram) in the configuration file.
-License
 
 ## License
 This project is licensed under the MIT License.
