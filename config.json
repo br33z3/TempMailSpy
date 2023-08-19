@@ -2,12 +2,12 @@
     "Main": {
         "Token": {
             "Telegram": {
-                "Telegram Token": "6524475538:AAFo5zLIaYeHCyFQscx4w7e9gwtYq5bKW18",
-                "Telegram Chat ID": "-1001661450123",
+                "Telegram Token": "",
+                "Telegram Chat ID": "",
                 "info": "br33z3"
             },
             "Slack": {
-                "Slack Bot User OAuth Token": "xoxb-5657156069985-5629994985815-Ejt8Fya8nLBzbDeo1rMznvpe"
+                "Slack Bot User OAuth Token": ""
             }
         },
         "Keywords": [
