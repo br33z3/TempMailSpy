@@ -42,7 +42,7 @@ Where:
 - `-bt or --backup_time : How many minutes does the script run? (default=1)`
 - `rd or --request_delay : Delays between requests in seconds (default=5)`
 - `m or --mode : Mode (G for Grep or A for All)`
-- `n or --notification : Notification method (Slack or Telegram)`
+- `n or --notification : Notification method (Slack, Telegram or Discord)`
 
 
 ## Notifications

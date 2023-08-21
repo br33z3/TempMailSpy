@@ -10,7 +10,7 @@ def help_menu():
     parser.add_argument('-bt', "--backup_time", type=int, help='How many minutes does the script run?', default=1)
     parser.add_argument('-rd', "--request_delay", type=int, help='Delays between requests(second)', default=5)
     parser.add_argument('-m', "--mode", type=str, help='Mode? Grep/All', default='G', choices=['G','A'])
-    parser.add_argument('-n', "--notification", type=str, help='Notification', choices=['Telegram','Slack'])
+    parser.add_argument('-n', "--notification", type=str, help='Notification', choices=['Telegram','Slack', 'Discord'])
 
     if len(sys.argv) == 1:
         parser.print_help(sys.stderr)
@@ -40,6 +40,13 @@ def save_results(results, output_json):
             json.dump(results, json_file, indent=4)
         else:
             print("No results to write to the file.")
+
+def notify_discord(msg):
+    webhook_url = json_file_data['Main']['Token']['Discord']['WebhookURL']
+    data = {"content": msg}
+    response = requests.post(webhook_url, json=data)
+    if response.status_code != 204:
+        print(f"Failed to send notification to Discord: {response.status_code}")
 
 def notify_telegram(msg):
     msg_new = quote(msg)
@@ -103,7 +110,8 @@ def yopmail():
 
                             if notification == "Slack":
                                 notify_slack("Gem Found!( Keyword = "+greps[aa]+"\nService: "+result_mail_output[index][0]+"\nRequest Time: "+result_mail_output[index][1]+"\nMail Title: "+result_mail_output[index][2]+"\nMail Sender: "+result_mail_output[index][3]+"\nMail Link::"+result_mail_output[index][4])
-
+                            if notification == "Discord":
+                                notify_discord("Gem Found! \nKeyword = "+greps[aa]+"\nService: "+result_mail_output[index][0]+"\nRequest Time: "+result_mail_output[index][1]+"\nMail Title: "+result_mail_output[index][2]+"\nMail Sender: "+result_mail_output[index][3]+"\nMail Link::"+result_mail_output[index][4])
                             index = index + 1
                 else:
                     if yopMailRSS_mails.link in result_links:
@@ -125,6 +133,8 @@ def yopmail():
                         notify_telegram("\nService: "+result_mail_output[index][0]+"\nRequest Time: "+result_mail_output[index][1]+"\nMail Title: "+result_mail_output[index][2]+"\nMail Sender: "+result_mail_output[index][3]+"\nMail Link::"+result_mail_output[index][4])
                     if notification == "Slack":
                             notify_slack("\nService: "+result_mail_output[index][0]+"\nRequest Time: "+result_mail_output[index][1]+"\nMail Title: "+result_mail_output[index][2]+"\nMail Sender: "+result_mail_output[index][3]+"\nMail Link::"+result_mail_output[index][4])
+                    if notification == "Discord":
+                        notify_slack("\nService: "+result_mail_output[index][0]+"\nRequest Time: "+result_mail_output[index][1]+"\nMail Title: "+result_mail_output[index][2]+"\nMail Sender: "+result_mail_output[index][3]+"\nMail Link::"+result_mail_output[index][4])
                     index = index + 1
 
         time.sleep(request_delay)
@@ -160,7 +170,7 @@ def tempmail_plus():
     start_time = time.time()
     end_time = start_time + backup_time * 60
     index = 0
-    result_links = set() 
+    result_links = set()
     result_mail_ids = set()  # to store mail ids for checking uniqueness
     while time.time() < end_time:
         for gb in range(0, len(Mail_Links2)):
@@ -188,6 +198,8 @@ def tempmail_plus():
                                 result_mail_output[index][4] = "https://tempmail.plus/en/#!mail/"+str(data["mail_list"][xz]["mail_id"])
                                 if notification == "Telegram":
                                     notify_telegram("Gem Found!( Keyword = "+greps[aa]+"\nService: "+result_mail_output[index][0]+"\nRequest Time: "+result_mail_output[index][1]+"\nMail Title: "+result_mail_output[index][2]+"\nMail Sender: "+result_mail_output[index][3]+"\nMail Link::"+result_mail_output[index][4])
+                                if notification == "Discord":
+                                   notify_discord("\nGem Found!\n( Keyword = "+greps[aa]+"\nService: "+result_mail_output[index][0]+"\nRequest Time: "+result_mail_output[index][1]+"\nMail Title: "+result_mail_output[index][2]+"\nMail Sender: "+result_mail_output[index][3]+"\nMail Link::"+result_mail_output[index][4])
                                 if notification == "Slack":
                                     notify_slack("Gem Found!( Keyword = "+greps[aa]+"\nService: "+result_mail_output[index][0]+"\nRequest Time: "+result_mail_output[index][1]+"\nMail Title: "+result_mail_output[index][2]+"\nMail Sender: "+result_mail_output[index][3]+"\nMail Link::"+result_mail_output[index][4])
                                 index = index + 1
@@ -209,6 +221,8 @@ def tempmail_plus():
                         result_mail_output[index][4] = "https://tempmail.plus/en/#!mail/"+str(data["mail_list"][xz]["mail_id"])
                         if notification == "Telegram":
                             notify_telegram("\nService: "+result_mail_output[index][0]+"\nRequest Time: "+result_mail_output[index][1]+"\nMail Title: "+result_mail_output[index][2]+"\nMail Sender: "+result_mail_output[index][3]+"\nMail Link::"+result_mail_output[index][4])
+                        if notification == "Discord":
+                           notify_discord("\nService: "+result_mail_output[index][0]+"\nRequest Time: "+result_mail_output[index][1]+"\nMail Title: "+result_mail_output[index][2]+"\nMail Sender: "+result_mail_output[index][3]+"\nMail Link::"+result_mail_output[index][4])
                         if notification == "Slack":
                             notify_slack("\nService: "+result_mail_output[index][0]+"\nRequest Time: "+result_mail_output[index][1]+"\nMail Title: "+result_mail_output[index][2]+"\nMail Sender: "+result_mail_output[index][3]+"\nMail Link::"+result_mail_output[index][4])
                         index = index + 1
@@ -241,7 +255,8 @@ if __name__ == "__main__":
         notify_telegram('The script has started')
     if notification == "Slack":
         notify_slack('The script has started')
-    
+    if notification == "Discord":
+        notify_discord('The script has started')
 
     with ThreadPoolExecutor() as executor:
         yopmail_future = executor.submit(yopmail)
@@ -255,5 +270,6 @@ if __name__ == "__main__":
     if notification == "Telegram":
         notify_telegram('The script has finished')
     if notification == "Slack":
-        notify_slack('The script has started')
-    
+        notify_slack('The script has finished')
+    if notification == "Discord":
+       notify_discord('The script has finished')
