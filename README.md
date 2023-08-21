@@ -8,7 +8,7 @@ The main features of TempMailSpy are:
 
 1. Ability to set custom request delays and backup times.
 2. Flexible filtering mode with two options, 'Grep' (searches for specific keywords) and 'All' (retrieves all available mail data).
-3. Automated notifications via Slack or Telegram when matches are found.
+3. Automated notifications via Slack, Telegram or Discord when matches are found.
 
 ## Dependencies
 
