@@ -8,7 +8,11 @@
             },
             "Slack": {
                 "Slack Bot User OAuth Token": ""
-            }
+            },
+        "Discord": {
+        "WebhookURL":""
+                }
+
         },
         "Keywords": [
             "password",
